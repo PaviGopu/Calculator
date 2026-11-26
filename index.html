@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h4 id="brand">Casio</h4>
+            <div class="textarea">
+                <h4 id="textfield"></h4>
+            </div>
+            <div class="buttons">
+                <button class="spl_btn" onclick="clearelement()">AC</button>
+                <button class="spl_btn" onclick="deletechar()">⌫</button>
+                <button class="spl_btn">+/-</button>
+                <button class="spl_btn" onclick="getelement('÷')">÷</button>
+            </div>
+            <div class="buttons">
+                <button class="btn" onclick="getelement('7')">7</button>
+                <button class="btn" onclick="getelement('8')">8</button>
+                <button class="btn" onclick="getelement('9')">9</button>
+                <button class="spl_btn" onclick="getelement('x')">x</button>
+            </div>
+            <div class="buttons">
+                <button class="btn" onclick="getelement('4')">4</button>
+                <button class="btn" onclick="getelement('5')">5</button>
+                <button class="btn" onclick="getelement('6')">6</button>
+                <button class="spl_btn" onclick="getelement('-')">-</button>
+            </div>
+            <div class="buttons">
+                <button class="btn" onclick="getelement('1')">1</button>
+                <button class="btn" onclick="getelement('2')">2</button>
+                <button class="btn" onclick="getelement('3')">3</button>
+                <button class="spl_btn" onclick="getelement('+')">+</button>
+            </div>
+            <div class="buttons">
+                <button class="spl_btn" onclick="getelement('%')">%</button>
+                <button class="btn" onclick="getelement('0')">0</button>
+                <button class="btn" onclick="getelement('.')">.</button>
+                <button class="spl_btn" onclick="calculate()">=</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
